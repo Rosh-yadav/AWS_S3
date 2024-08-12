@@ -1,0 +1,31 @@
+Backup and Disaster Recovery Using S3 and S3 Glacier
+Objective: Implement a robust backup and disaster recovery solution by leveraging Amazon S3 for data backup and Amazon S3 Glacier for long-term archival storage.
+
+
+Using AWS Backup
+AWS Backup is a fully managed backup service that centralizes and automates data backup across AWS services.
+
+Using AWS Data Lifecycle Manager (DLM)
+AWS Data Lifecycle Manager is used primarily for managing Amazon EBS snapshots, but it can be used to manage data lifecycles of other AWS services as well.
+
+Summary
+AWS Backup provides a centralized way to manage backups for various AWS resources, including S3.
+AWS Data Lifecycle Manager (DLM) helps manage object lifecycles and automate data transitions in S3.
+Custom Scripts offer flexibility for more tailored backup solutions and can be automated using cron jobs or other schedulers.
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+SSE-KMS stands for Server-Side Encryption with AWS Key Management Service (KMS). It is a feature that helps secure your data in Amazon S3 (Simple Storage Service) by encrypting it with a key managed by AWS Key Management Service (KMS).
+
+Understanding SSE-KMS
+**1. What is SSE-KMS?
+
+Server-Side Encryption: SSE is the encryption of data at rest, which means the data is encrypted before it is stored and decrypted when it is accessed. This ensures that your data is protected from unauthorized access.
+KMS Integration: SSE-KMS integrates with AWS Key Management Service (KMS), which provides a managed encryption key for encrypting and decrypting your data. KMS helps manage and control access to these keys.
+**2. How Does SSE-KMS Work?
+
+Encryption Process: When data is uploaded to an S3 bucket with SSE-KMS enabled, S3 uses a KMS key to encrypt the data. The encryption happens server-side, so the data is encrypted as it is stored and decrypted as it is retrieved.
+KMS Key Management: You can use either AWS managed keys or customer managed keys. AWS managed keys are automatically created and managed by AWS, whereas customer managed keys give you more control over key rotation and permissions.
+
+____________________________________________________________________________________________________________________________________________________________________________
+
