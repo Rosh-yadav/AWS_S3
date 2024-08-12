@@ -1,0 +1,20 @@
+**In s3 we used to see who has access and we used to generate the report and see who has gone to which website and if the user has access and he didn't use that then we remove his access and follow the principle of least privilege. Who have enable the MFA and which user didn't till now **
+ 
+ 
+ 
+ 
+ 
+S3 bucket same region and cross region replication srp crp.
+ 
+Also deleting will not replicate we need to enable the setting in management tab for replication deletion and all's when version is enabled then only u can add the replication in s3 bucket
+ 
+ 
+ 
+In s3 we have one feature called presignged url for providing access to our bucket any object for limited time that url is valid for 10 min
+ 
+ 
+In s3 we can access the data bith in http and https and also server side encryption and client side encryption so client side completely it's happening in client laptop but when it comes to AWS server side encryption we will enable the sse service in that bucket and also instead of using kms or AWS key we will use bucket key as it will store the key in s3 bucket and our cost is also saved as requested will not hit again again api call we can safe lot of money also
+ 
+ 
+ 
+If u wanted to remove the data from edge location u can use invalidation to delete the data from edge location.
